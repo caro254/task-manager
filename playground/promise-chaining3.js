@@ -14,6 +14,10 @@ const deleteTaskAndCount = async id => {
   return count;
 };
 
-updateTaskAndCount("5db83e38c9f30743bf399ff7", 34).then(count => {
-  console.log(count);
-});
+updateTaskAndCount("5db83e38c9f30743bf399ff7")
+  .then(count => {
+    console.log(count);
+  })
+  .catch(e => {
+    console.log(e);
+  });
